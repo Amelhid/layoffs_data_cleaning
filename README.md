@@ -80,3 +80,25 @@ This project demonstrates practical use of:
 ## Result
 
 The raw layoffs dataset was transformed into a clean, standardized, and analysis-ready dataset, suitable for further exploratory data analysis and visualization.
+## Exploratory Data Analysis (EDA)
+
+After cleaning the dataset, I explored it using SQL to answer key questions about the layoffs.
+
+### Key Questions Explored
+
+- What was the single largest layoff event?
+- What percentage of companies shut down completely (100% laid off)?
+- Which companies, locations, countries, industries, and company stages were hit hardest?
+- How did layoffs trend year over year and month over month?
+- Which companies had the most layoffs each year (top 5, handling ties)?
+- What did the cumulative (rolling) total of layoffs look like over time?
+
+
+### SQL Techniques Used in EDA
+
+- Aggregation with `GROUP BY` and `SUM()`
+- Window functions: `DENSE_RANK()`, running totals with `SUM() OVER (ORDER BY ...)`
+- CTEs for multi-step logic (aggregate → rank → filter)
+- Date functions: `YEAR()`, `MONTH()`, `DATE_FORMAT()`
+
+All EDA queries are available in [`eda_queries.sql`](./eda_queries.sql).
