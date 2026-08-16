@@ -90,8 +90,8 @@ After cleaning the dataset, I explored it using SQL to answer key questions abou
 - What percentage of companies shut down completely (100% laid off)?
 - Which companies, locations, countries, industries, and company stages were hit hardest?
 - How did layoffs trend year over year and month over month?
-- Which companies had the most layoffs each year (top 5, handling ties)?
-- What did the cumulative (rolling) total of layoffs look like over time?
+- Which companies had the most layoffs each year?
+- What did the rolling total of layoffs look like over time?
 
 
 ### SQL Techniques Used in EDA
